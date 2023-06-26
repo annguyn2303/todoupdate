@@ -1,5 +1,5 @@
 import './App.css';
-import { useReducer, useRef } from 'react';
+import { useReducer, useRef, useEffect } from 'react';
 // import Content from './Content'
 
 // useReducer để làm Todo list !!!
@@ -24,11 +24,13 @@ const setJob = payload => {
   }
 }
 
+
 const addJob = payload => {
   return {
     type: ADD_JOB,
-    payload
+    payload,
   }
+  
 }
 
 const deleteJob = payload => {
@@ -108,7 +110,7 @@ const reducer = (state, action) => {
     default:
       throw new Error('Invalid action!')
   }
-
+  
   return newState;
 }
 // 4. Dispatch
