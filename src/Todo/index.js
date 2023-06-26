@@ -47,7 +47,7 @@ function App() {
         />
         <button 
           onClick={handleSubmit}
-          className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 h-20 w-1/4 bg-purple-400 text-5xl mb-12 border-sky-500 rounded-full max-w-full ml-4"
+          className="transition ease-in-out hover:translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-150 h-20 w-1/4 bg-purple-400 text-5xl mb-12 border-sky-500 rounded-full max-w-full ml-4"
         >
           Add Todo      
         </button>
